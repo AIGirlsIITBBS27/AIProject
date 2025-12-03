@@ -1,0 +1,83 @@
+
+.welcome-page {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at top left, #0f2027, #203a43, #2c5364);
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.welcome-glow {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: rgba(0, 255, 204, 0.1);
+  filter: blur(80px);
+  top: 10%;
+  right: 20%;
+  z-index: 0;
+  animation: glowMove 10s infinite alternate ease-in-out;
+}
+
+@keyframes glowMove {
+  from { transform: translateY(0); }
+  to { transform: translateY(30px); }
+}
+
+.welcome-card {
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  padding: 60px 80px;
+  text-align: center;
+  color: #e0e0e0;
+  max-width: 500px;
+  width: 90%;
+}
+
+.welcome-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.welcome-title span {
+  color: #00ffc3;
+  text-shadow: 0 0 10px rgba(0, 255, 204, 0.6);
+}
+
+.welcome-text {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #cfd8dc;
+}
+
+.welcome-btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 30px;
+  background: linear-gradient(90deg, #00b4db, #0083b0);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+}
+
+.welcome-btn:hover {
+  background: linear-gradient(90deg, #00a0c6, #007095);
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.5);
+}

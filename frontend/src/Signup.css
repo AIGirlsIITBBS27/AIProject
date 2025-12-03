@@ -1,0 +1,130 @@
+.signup-page {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1e1e2f, #252547, #31235a);
+  background-size: 300% 300%;
+  animation: gradientMove 10s ease infinite;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.signup-container {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 40px;
+  width: 420px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.signup-container::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, #00ffcc, #8a2be2, #ff0077, #00ffcc);
+  z-index: -1;
+  background-size: 300%;
+  border-radius: 20px;
+  animation: borderGlow 6s linear infinite;
+}
+
+@keyframes borderGlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.signup-form h2 {
+  margin-bottom: 25px;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #d1d1e0;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff57;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 10px #8a2be2;
+}
+
+.form-group select {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff; 
+}
+
+.form-group select option {
+  background: #31235a; 
+  color: #fff; 
+}
+
+.btn-register {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #8a2be2, #00ffcc);
+  color: #fffffffb;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-register:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #00ffcc;
+}
+
+.already-user {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.already-user a {
+  color: #00ffcc;
+  text-decoration: none;
+}
+
+.already-user a:hover {
+  text-decoration: underline;
+}

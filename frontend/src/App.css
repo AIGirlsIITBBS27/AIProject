@@ -1,0 +1,125 @@
+/* Reset and layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+
+.navdiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 30px;
+}
+
+.logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navdiv ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.navdiv ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.navdiv ul li a:hover {
+  color: #ddd;
+  text-decoration: underline;
+}
+
+#background-video {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  /overflow: hidden
+}
+
+#background-video video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  display: block;
+}
+
+
+/* About Section */
+.about-section {
+  background-color: rgb(245, 245, 214);
+  color: #333;
+  padding: 100px 30px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.about-section h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+/* Contact Section */
+.contact-section {
+  background-color: #e0e0e0;
+  color: #333;
+  padding: 40px 50px;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.contact-section p {
+  font-size: 18px;
+  margin: 8px 0;
+}
